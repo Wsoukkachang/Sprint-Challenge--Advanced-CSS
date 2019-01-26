@@ -24,6 +24,13 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile {
+        width: 90%;
+        margin: 3% auto;
+        height: 100%;
+  
+      }
     }
   }
 
@@ -45,19 +52,29 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+  }
 
     .walk-text {
       width: 50%;
 
       h3 {
         margin-bottom: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
 
       p {
         margin-bottom: 26px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
 
       .btn {
+        .button;
       }
     }
 
@@ -71,10 +88,55 @@
         border-radius: 10px;
       }
     }
-  }
 
-  .atmos-img {
-    width: 100%;
-    border-radius: 10px;
-  }
+    .atmos-img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  
+    @media @mobile {
+  
+        .sky, .launch {
+          display: none;
+        }
+
+        .walk {
+          display: flex;
+          flex-direction: column-reverse;
+          width: 100%;
+          padding: 15px;
+        }
+
+        .home .space-images img {
+          border-radius: 20px;
+          height: 100%;
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        .walk-img {
+          width: 100%;
+          margin: 3% auto;
+        }
+
+        .walk-text {
+          width: 100%;
+    
+          h3 {
+              width: 100%;
+            }
+    
+          p {
+              width: 100%;
+            }
+          }
+
+          .btn {
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+          }
+        
+    }
+
 }// home

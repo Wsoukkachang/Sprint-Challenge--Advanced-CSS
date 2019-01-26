@@ -1,1 +1,51 @@
 // Mixins Here
+
+.keyframes(@name; @arguments) {
+    @-moz-keyframes @name { 
+        @arguments(); 
+    }
+	@-webkit-keyframes @name { 
+        @arguments(); 
+    }
+	@keyframes @name {
+        @arguments(); 
+    }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+
+.button() {
+        width: 30%;
+        height: 35px;
+        text-decoration: none;
+        background-color: @btn-bg-color;
+        border-radius: 6px;
+        font-size: 1.6rem;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 35px;
+        vertical-align: middle;
+        flex-wrap: wrap;
+        cursor: pointer;
+        
+        & a {
+            text-decoration: none;
+            color: #FFFFFF;
+            display: block;
+        }
+        
+        & a:visited {
+            color: #FFFFFF;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        &:hover {
+            background-color: darken(@btn-bg-color, 10%);
+            color: white;
+        }
+    }
