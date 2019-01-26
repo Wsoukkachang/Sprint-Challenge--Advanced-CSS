@@ -160,6 +160,54 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.top-section {
+  padding: 0.5% 0;
+  background-color: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+  height: 90px;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 3.6rem;
+  margin: 1% auto;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: #454A59;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+  }
+}
+nav {
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.navigation nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.6rem;
+  color: #212529;
+}
+.navigation nav a:hover {
+  color: #23293B;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -219,5 +267,9 @@ footer {
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+}
+.home .atmos-img {
+  width: 100%;
   border-radius: 10px;
 }
