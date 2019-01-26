@@ -1,23 +1,5 @@
 // Mixins Here
 
-.keyframes(@name; @arguments) {
-    @-moz-keyframes @name { 
-        @arguments(); 
-    }
-	@-webkit-keyframes @name { 
-        @arguments(); 
-    }
-	@keyframes @name {
-        @arguments(); 
-    }
-}
-
-.animation(@arguments) {
-	-webkit-animation: @arguments;
-	-moz-animation: @arguments;
-	animation: @arguments;
-}
-
 .button() {
         width: 30%;
         height: 35px;
@@ -31,6 +13,7 @@
         vertical-align: middle;
         flex-wrap: wrap;
         cursor: pointer;
+        font-family: @river-bend;
         
         & a {
             text-decoration: none;
@@ -48,4 +31,14 @@
             background-color: darken(@btn-bg-color, 10%);
             color: white;
         }
+    }
+
+    .margin() {
+        margin: 0 auto;
+    }
+
+    .center() {
+        display: flex;
+        align-content: center;
+        justify-content: center;
     }

@@ -163,7 +163,7 @@ p {
 .top-section {
   padding: 0.5% 0;
   background-color: #F6F6F6;
-  border-bottom: 2px solid #F1F1F1;
+  border-bottom: 1px solid #F1F1F1;
   height: 25%;
 }
 .nav-bar {
@@ -191,10 +191,10 @@ nav {
   text-decoration: none;
   margin: 0 10px;
   font-size: 1.6rem;
-  color: #212529;
+  color: #23293B;
 }
 .navigation nav a:hover {
-  color: #23293B;
+  color: #5E6164;
 }
 footer {
   color: #22283B;
@@ -278,6 +278,7 @@ footer {
   vertical-align: middle;
   flex-wrap: wrap;
   cursor: pointer;
+  font-family: #454A59;
 }
 .home .walk-text .btn a {
   text-decoration: none;
